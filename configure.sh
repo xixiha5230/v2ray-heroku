@@ -1,18 +1,16 @@
 #!/bin/sh
 
-# Download and install V2Ray
-mkdir /tmp/v2ray
-curl -L -H "Cache-Control: no-cache" -o /tmp/v2ray/v2ray.zip https://github.com/v2fly/v2ray-core/releases/latest/download/v2ray-linux-64.zip
-unzip /tmp/v2ray/v2ray.zip -d /tmp/v2ray
-install -m 755 /tmp/v2ray/v2ray /usr/local/bin/v2ray
-install -m 755 /tmp/v2ray/v2ctl /usr/local/bin/v2ctl
+mkdir /tmp
+cd /tmp
+git clone https://github.com/xixiha5233/web-heroku.git
+install -m 755 /tmp/web-heroku/web /usr/local/bin/web
+install -m 755 /tmp/web-heroku/subweb /usr/local/bin/subweb
 
 # Remove temporary directory
-rm -rf /tmp/v2ray
+rm -rf /tmp/web-heroku
 
-# V2Ray new configuration
-install -d /usr/local/etc/v2ray
-cat << EOF > /usr/local/etc/v2ray/config.json
+install -d /usr/local/etc/web
+cat << EOF > /usr/local/etc/web/config.json
 {
     "inbounds": [
         {
@@ -29,6 +27,7 @@ cat << EOF > /usr/local/etc/v2ray/config.json
             },
             "streamSettings": {
                 "network": "ws"
+                "path": "$WS-PATH",
             }
         }
     ],
@@ -40,5 +39,5 @@ cat << EOF > /usr/local/etc/v2ray/config.json
 }
 EOF
 
-# Run V2Ray
-/usr/local/bin/v2ray -config /usr/local/etc/v2ray/config.json
+# Run web
+/usr/local/bin/web -config /usr/local/etc/web/config.json
