@@ -26,7 +26,7 @@ cat << EOF > /usr/local/etc/web/config.json
                 "disableInsecureEncryption": true
             },
             "streamSettings": {
-                "network": "ws"
+                "network": "ws",
                 "path": "$WS-PATH",
             }
         }
