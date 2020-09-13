@@ -28,7 +28,7 @@ cat << EOF > /usr/local/etc/web/config.json
             "streamSettings": {
                 "network": "ws",
                 "wsSettings": {
-                    "path": "PATH"
+                    "path": "WSPATH"
                 }
             }
         }

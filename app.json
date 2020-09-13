@@ -13,7 +13,7 @@
             "description": "My PORT",
             "value": "443"
         },
-        "PATH": {
+        "WSPATH": {
             "description": "My PATH",
             "value": "/"
         }
