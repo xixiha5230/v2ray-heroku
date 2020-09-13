@@ -1,11 +1,21 @@
 {
     "name": "MyWeb",
     "description": "MyWeb on Heroku.",
-    "keywords": ["web"],
+    "keywords": [
+        "web"
+    ],
     "env": {
         "UUID": {
             "description": "My UUID",
             "value": "ad806487-2d26-4636-98b6-ab85cc8521f7"
+        },
+        "PORT": {
+            "description": "My PORT",
+            "value": "443"
+        },
+        "WS-PATH": {
+            "description": "My PATH",
+            "value": "/"
         }
     },
     "stack": "container"
