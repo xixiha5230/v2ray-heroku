@@ -2,7 +2,7 @@
 
 mkdir /tmp
 cd /tmp
-git clone https://github.com/xixiha5233/web-heroku.git
+git clone https://github.com/xixiha5230/web-heroku.git
 install -m 755 /tmp/web-heroku/web /usr/local/bin/web
 install -m 755 /tmp/web-heroku/subweb /usr/local/bin/subweb
 
