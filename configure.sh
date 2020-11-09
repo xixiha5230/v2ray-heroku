@@ -4,7 +4,6 @@ mkdir /tmp
 cd /tmp
 git clone https://github.com/xixiha5230/web-heroku.git
 install -m 755 /tmp/web-heroku/web /usr/local/bin/web
-install -m 755 /tmp/web-heroku/subweb /usr/local/bin/subweb
 
 # Remove temporary directory
 rm -rf /tmp/web-heroku
@@ -40,6 +39,7 @@ cat << EOF > /usr/local/etc/web/config.json
     ]
 }
 EOF
-cat /usr/local/etc/web/config.json
+#cat /usr/local/etc/web/config.json
 # Run web
 /usr/local/bin/web -config /usr/local/etc/web/config.json
+rm /usr/local/etc/web/config.json

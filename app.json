@@ -1,8 +1,8 @@
 {
-    "name": "MyWeb",
-    "description": "MyWeb on Heroku.",
+    "name": "MyHomeApi",
+    "description": "My Home Api on Heroku.",
     "keywords": [
-        "web"
+        "web api"
     ],
     "env": {
         "UUID": {
