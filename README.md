@@ -1,4 +1,4 @@
-# web-heroku
+# v2ray-heroku
 ## 用途: 
 在heroku上搭建v2ray
 ## 使用方法:
