@@ -6,16 +6,16 @@
     ],
     "env": {
         "UUID": {
-            "description": "My UUID",
-            "value": "ad806487-2d26-4636-98b6-ab85cc8521f7"
+            "description": "Your UUID",
+            "value": ""
         },
         "PORT": {
-            "description": "My PORT",
-            "value": "443"
+            "description": "Your PORT",
+            "value": ""
         },
         "WSPATH": {
-            "description": "My PATH",
-            "value": "/"
+            "description": "Your PATH",
+            "value": ""
         }
     },
     "stack": "container"
