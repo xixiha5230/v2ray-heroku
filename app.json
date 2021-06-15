@@ -1,20 +1,20 @@
 {
-    "name": "MyHomeApi",
-    "description": "My Home Api on Heroku.",
+    "name": "V2ray",
+    "description": "v2ray on heroku.",
     "keywords": [
-        "web api"
+        "v2ray"
     ],
     "env": {
         "UUID": {
-            "description": "Your UUID",
+            "description": "Your UUID (*)",
             "value": ""
         },
         "PORT": {
-            "description": "Your PORT",
+            "description": "Your PORT (*)",
             "value": ""
         },
         "WSPATH": {
-            "description": "Your PATH",
+            "description": "Your PATH (*)",
             "value": ""
         }
     },
